@@ -1,0 +1,401 @@
+<html>
+    <head>
+        <title>Weather page</title>
+    </head>
+    <body>
+        <h1>Your info is here!</h1>
+        <h3>Movie name:{{movie['results'][0]['title']}}</h3>
+        <p>
+            <img src="{{movie['results'][0]['poster_path']}}">
+            <li>Language:{{movie['results'][0]['original_language']}}</li>
+            <li>Popularity:{{movie['results'][0]['popularity']}}</li>
+            <li>Year of release:{{movie['results'][0]['release_date']}}</li>
+            <li>Overview:{{movie['results'][0]['overview']}}</li>
+        </p>
+    </body>
+</html>
+<!--
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/u7GXKY7EUTBS4kQO6aXqDNXWgpd.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 472221,
+      "original_language": "ml",
+      "original_title": "ആടുജീവിതം",
+      "overview": "Indian migrant worker Najeeb Muhammad goes to Saudi Arabia to earn money. However, in a twist of fate, he finds himself living a slave-like existence, herding goats in the middle of the desert.",
+      "popularity": 29.179,
+      "poster_path": "/vwRkVhvJuAFz4i8udXMNkcJCztc.jpg",
+      "release_date": "2024-03-28",
+      "title": "The Goat Life",
+      "video": false,
+      "vote_average": 7.5,
+      "vote_count": 23
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nw7kow1jmgEpclcqderck2mCP2P.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 1047227,
+      "original_language": "fr",
+      "original_title": "Les Chèvres !",
+      "overview": "France, 1640. Lawyer Maitre Pompignac has never won a case: all his clients are dead, either drawn and quartered, impaled or scalded... One day, a young woman comes to him and asks him to defend an inno- cent girl: 11-year-old Roxane, wrongly accused of killing a Marshal of France. Pompignac accepts, with- out realising that Roxane is in fact not an 11-year-old child, but a goat...",
+      "popularity": 7.571,
+      "poster_path": "/laAady5rFuq9znkMxkMd3rf39nO.jpg",
+      "release_date": "2024-02-21",
+      "title": "This Is the Goat!",
+      "video": false,
+      "vote_average": 5.2,
+      "vote_count": 27
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        18
+      ],
+      "id": 1364070,
+      "original_language": "zh",
+      "original_title": "三个羯子",
+      "overview": "A man returns to Shannxi to get three castrated goats, but excessive COVID quarantine rules stymie him and leave him and his family in chaos.",
+      "popularity": 25.229,
+      "poster_path": "/wnohinVV3tICOxXFYEXLbzmpTCR.jpg",
+      "release_date": "2024-10-29",
+      "title": "Three Castrated Goats",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 1179403,
+      "original_language": "pl",
+      "original_title": "Uśmiech losu",
+      "overview": "Andreas arrives on a remote Greek island to sell a plot of land inherited from his uncle. But who would buy a barren, rocky field with a stone hut? In order to sell the plot Andreas has to pay off a debt his uncle ran up with Yiannis, a local farmer.",
+      "popularity": 2.17,
+      "poster_path": "/v3CfutMecAIoUc6sbeW1awHc2JP.jpg",
+      "release_date": "2023-12-01",
+      "title": "Song of Goats",
+      "video": false,
+      "vote_average": 4.8,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        35
+      ],
+      "id": 1269128,
+      "original_language": "ar",
+      "original_title": "صندقة غنم",
+      "overview": "A showcased oud for sale in a conservative village, and a young man struggles to acquire it and play it in his village. This is the story narrated by the film \"Goat Pen\" directed by Hani Al-Baidhani.",
+      "popularity": 0.129,
+      "poster_path": "/xlZ36BHFI1Y6eZHAcWEjiiwdH7z.jpg",
+      "release_date": "2024-05-02",
+      "title": "Goat pen",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1237107,
+      "original_language": "ja",
+      "original_title": "G.O.A.T ~Greatest Of All Time~",
+      "overview": "“G.O.A.T” is an abbreviation for “Greatest Of All Time” and is a slang term that means “the best of all time”. A special concert will be held to bring out the charm of Kanato Tsukishiro, the top star of Tsukigumi, who has overwhelming expressiveness and singing ability. This time, we welcome Satoshi Mitsui, who is active not only as a choreographer but also as a director, to explore new possibilities for Tsukigumi members centered on Tsukishiro. Enjoy the finest entertainment to mark the beginning of 2024, the 110th anniversary of Takarazuka Revue.",
+      "popularity": 1.51,
+      "poster_path": "/8Wqr7Aiu8MouNjA90s51AAPN7D0.jpg",
+      "release_date": "2024-01-17",
+      "title": "G.O.A.T ~Greatest Of All Time~",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/V142GWckeXoQ6g6CG61CFb7QaZ.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 1073079,
+      "original_language": "en",
+      "original_title": "Kill Her Goats",
+      "overview": "Audra's graduation gift is her dream house, but it soon becomes a living nightmare when some uninvited guests come to her homecoming party who aren't very subtle about the fact they don't approve of the home's new owner.",
+      "popularity": 7.644,
+      "poster_path": "/oHVuaIHBX0dqqBUbvYyHgkhyCr8.jpg",
+      "release_date": "2023-04-28",
+      "title": "Kill Her Goats",
+      "video": false,
+      "vote_average": 3,
+      "vote_count": 9
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/tLitvwOz680j9RTTAUpAArMlu0H.jpg",
+      "genre_ids": [
+        878,
+        18
+      ],
+      "id": 654982,
+      "original_language": "ar",
+      "original_title": "Qu'importe si les bêtes meurent",
+      "overview": "Abdellah, a young shepherd living in the mountains, is forced to brave the snow blocking him in order to get food and save this cattle. Once he gets to the village, he faces a supernatural phenomenon.",
+      "popularity": 1.264,
+      "poster_path": "/zwo86BUCyAMcAXUXsv9t4dBgC9q.jpg",
+      "release_date": "2021-09-01",
+      "title": "So What If the Goats Die",
+      "video": false,
+      "vote_average": 6.5,
+      "vote_count": 2
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1366227,
+      "original_language": "nb",
+      "original_title": "Firefighter Goats",
+      "overview": "",
+      "popularity": 2.422,
+      "poster_path": null,
+      "release_date": "2024-10-20",
+      "title": "Firefighter Goats",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9Gi0xcJG2R9fxo5QHCxLByiov0g.jpg",
+      "genre_ids": [
+        27
+      ],
+      "id": 650019,
+      "original_language": "pt",
+      "original_title": "Cabrito",
+      "overview": "Split into three chapters, \"Cabrito\" tells the story of a man haunted by his loved ones. The film begins with the story of his father and how the family became cannibal. The second part focuses on his mother and how she awakens the worst in her son with her twisted religiousness. The last part is focused on the main character's final catharsis, when he kidnaps his first love, Rosalita, and reproduces the inhuman bizarre caring to which he was subjected in his family relations.",
+      "popularity": 1.852,
+      "poster_path": "/oIOiJlrZvcVUHAVfZduPszbJENB.jpg",
+      "release_date": "2020-07-24",
+      "title": "Goatling: Son of Satan",
+      "video": false,
+      "vote_average": 4,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        12
+      ],
+      "id": 1283096,
+      "original_language": "en",
+      "original_title": "Goatheads",
+      "overview": "A coming-of-age Albuquerque story about the Ditchgoon skate crew. A visceral adventure in a search to figure out what happened during a crazy party…",
+      "popularity": 0.612,
+      "poster_path": "/oaW38DXGSw9gaLOafxu3IBtEQce.jpg",
+      "release_date": "2024-05-09",
+      "title": "Goatheads",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kQ5FhHf0JY01zRJhQrhWXuVi6jH.jpg",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1230391,
+      "original_language": "en",
+      "original_title": "The Bastard Son of Goatman",
+      "overview": "During a slumber party movie marathon, two best friends become haunted by a mysterious bleating.",
+      "popularity": 0.952,
+      "poster_path": "/y5ovTsP6ELmzUnVb2xjLchTWrUA.jpg",
+      "release_date": "2024-01-14",
+      "title": "The Bastard Son of Goatman",
+      "video": false,
+      "vote_average": 10,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1321992,
+      "original_language": "fa",
+      "original_title": "The Goat",
+      "overview": "A young boy vows a goat to cure his mother's illness, but the goat is pregnant.",
+      "popularity": 0.83,
+      "poster_path": "/l4ZJWFqP6bRMKwhkw9JCAhZQ4cM.jpg",
+      "release_date": "2024-09-12",
+      "title": "The Goat",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xMQzMoYUOKCGlAZi5Rm4vpYRvQt.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1167917,
+      "original_language": "hi",
+      "original_title": "Gote Goat Ghost",
+      "overview": "A brass band member's hate comment in a public toilet triggers a chain reaction of diverse social expressions.",
+      "popularity": 0.858,
+      "poster_path": "/l8bzi6aMsjI5CPynEfQpY7ok5h2.jpg",
+      "release_date": "2024-07-27",
+      "title": "Bhed Bakri Bhoot",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [],
+      "id": 1285178,
+      "original_language": "en",
+      "original_title": "Goatsong: A Meditation",
+      "overview": "The film explores the dynamics of social status and exclusion, and it touches on Ancient Greece and the cruelty of school kids. It’s about goats.",
+      "popularity": 0.412,
+      "poster_path": "/2VEpHzhsBia8JjuHgRHd4x7spRP.jpg",
+      "release_date": "2024-05-01",
+      "title": "Goatsong: A Meditation",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/qZy0ShVM9XahPTtttruaMl1fGvx.jpg",
+      "genre_ids": [
+        18
+      ],
+      "id": 1172522,
+      "original_language": "en",
+      "original_title": "Wild Goat Surf",
+      "overview": "It’s 2003, and 12-year-old Rell “Goat” Barrel and her mom Jane are scheming and scrounging their way through another Penticton summer. Having illegally sublet the house they’re renting; they’re now holed up in a RV park bordering Skaha Lake. From this modest base of operations, Goat befriends an awkward outsider (Leandro Guedes), skateboards, shoplifts, and talks a big game about becoming a world-class surfer… Despite having never actually climbed atop a board or laid eyes on the ocean.",
+      "popularity": 2.027,
+      "poster_path": "/axq6MtNH5K9b1CWdsJ6UlGybBLm.jpg",
+      "release_date": "2023-09-29",
+      "title": "Wild Goat Surf",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/wYl6zbiWo02mXLgxu2Jq72GLbhz.jpg",
+      "genre_ids": [
+        18,
+        27
+      ],
+      "id": 1341101,
+      "original_language": "en",
+      "original_title": "The place where goats are raised",
+      "overview": "Tells the story a woman's life (and death) through poetry and symbolism.",
+      "popularity": 3.087,
+      "poster_path": "/uc83QwZwqfacVSIvbQEDJIqgO1l.jpg",
+      "release_date": "2024-07-31",
+      "title": "The place where goats are raised",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": null,
+      "genre_ids": [
+        27,
+        53
+      ],
+      "id": 1290430,
+      "original_language": "en",
+      "original_title": "Yule Goat",
+      "overview": "A woman discovers an odd book in the storage of a college building",
+      "popularity": 0.27,
+      "poster_path": "/pKkzi2FhzXg9vxxWp3VJhFQUeTY.jpg",
+      "release_date": "2024-05-10",
+      "title": "Yule Goat",
+      "video": false,
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/sF7ulLTMpOyvlNPbT7C4TlopADR.jpg",
+      "genre_ids": [
+        27,
+        9648
+      ],
+      "id": 1377197,
+      "original_language": "en",
+      "original_title": "The Bastard Son of Goatwoman",
+      "overview": "A year after a terrible accident, three friends reunite for a slumber party movie marathon.",
+      "popularity": 5.379,
+      "poster_path": "/ddD7ob7xGUQZZ6ZWQDN5Vw9uiIy.jpg",
+      "release_date": "2024-10-27",
+      "title": "The Bastard Son of Goatwoman",
+      "video": false,
+      "vote_average": 10,
+      "vote_count": 1
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/5B0koej1juwlTdGUSsfScT2cXZU.jpg",
+      "genre_ids": [
+        28,
+        18,
+        53
+      ],
+      "id": 1129608,
+      "original_language": "ta",
+      "original_title": "த கிரேட்டஸ்ட் ஆஃப் ஆல் டைம்",
+      "overview": "A once decorated member of the Special Anti-Terrorism Squad (SATS) is called back into action by his former colleagues for an important mission, setting him on a dangerous collision course with his own past.",
+      "popularity": 31.016,
+      "poster_path": "/r5FjbUg5Ei9I1q48ENbo6XoFFZy.jpg",
+      "release_date": "2024-09-05",
+      "title": "The Greatest of All Time",
+      "video": false,
+      "vote_average": 5.3,
+      "vote_count": 11
+    }
+  ],
+  "total_pages": 2,
+  "total_results": 23
+}
+
+
+'Title': 'Goat', 'Year': '2016',
+ 'Rated': 'R', 'Released': '23 Sep 2016', 
+ 'Runtime': '96 min', 'Genre': 'Drama', 'Director': 
+ 'Andrew Neel', 'Writer': 'David Gordon Green, Brad Land, Andrew Neel',
+  'Actors': 'Ben Schnetzer, Nick Jonas, Gus Halper', 'Plot': 
+  'Reeling from a terrifying assault, a 19 year-old enrolls 
+  into college with his brother and pledges the same fraternity. 
+  What happens there in the name of "brotherhood" tests him and his 
+  loyalty to his brother in brutal ways.', 
+  'Language': 'English', 'Country': 'United States', 'Awards': 
+  '5 nominations', 
+  'Poster': 'https://m.media-amazon.com/images/M/MV5BMTUxNjg1ODY3Ml5BMl5BanBnXkFtZTgwODEyNjUzOTE@._V1_SX300.jpg', 'Ratings': [{'Source': 'Internet Movie Database', 'Value': '5.7/10'}, {'Source': 'Rotten Tomatoes', 'Value': '79%'}, {'Source': 'Metacritic', 'Value': '64/100'}], 'Metascore': '64', 'imdbRating': '5.7', 'imdbVotes': '8,156', 'imdbID': 
+'tt4437216', 'Type': 'movie', 'DVD': 'N/A', 
+'BoxOffice': '$23,020', 
+'Production': 'N/A', 'Website': 'N/A', 'Response': 'True'}-->

@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Home page</title>
+    </head>
+    <body>
+        <form action="{{url_for('home')}}" method="POST">
+            <label>Enter movie name:</label>
+            <input type="text" name="movie_title" required></br>
+            <label>Enter year:</label>
+            <input type="text" name="year"></br>
+            <label>Enter language:</label>
+            <input type="text" name="lang"></br>
+            <input type="Submit" value="Search">
+        </form>
+    </body>
+</html>
